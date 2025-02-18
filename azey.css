@@ -1,90 +1,114 @@
-body{
-	background-color: lightpink;
+body {
+    background-color: lightpink;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
-.navbar{
-	display: flex;
-	justify-content: space-between;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.Try input{
-	background-color: blue;
-	color: white;
-	border: none;
-	border-radius: 5px;
-	height: 40px;
-}
+
 .Codecademy {
-	border: 5px solid black;
-	font-weight: bold;
-	width: 75px;
-	height: 50px;
+    font-weight: bold;
 }
+
+.Try input {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+}
+
 .Email {
-	background-color: blue;
-	color: white;
-	/*height: 120px;
-	width: 600px;*/
-	padding: 10px;
-	margin-top: 10px;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
 }
-.Email input{
-	background-color: white;
-	color: black;
-	border: none;
-	border-radius: 5px;
-	height: 40px;
+
+.Email input {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
 }
+
 .Pro {
-	background-color: black;
-	color: white;
-	width: 150px;
+    background-color: black;
+    color: white;
+    width: 150px;
 }
 
 .Get-more {
-	background-color: white;
-	height: 150px;
-	border: 2px solid;
-	margin-top: 10px;
-	padding: 0px 10px 0px 10px;
+    background-color: white;
+    height: auto;
+    border: 2px solid;
+    margin-top: 10px;
+    padding: 10px;
 }
+
 .edit {
-	color: slateblue;
-	font-size: 18px;
+    color: slateblue;
+    font-size: 18px;
 }
-.Course{
-	background-color: white;
-	height: 200px;
-	padding: 5px 10px 5px 10px;
+
+.Course {
+    background-color: white;
+    height: auto;
+    padding: 10px;
 }
-.Visual{
-	background-color: lightgrey;
-	height: 60px;
-	padding-left: 50px;
-	display: flex;
-	flex-direction: center;
-	font-size: 20px;
-	font-weight: bold;
+
+.Visual {
+    background-color: lightgrey;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
 }
+
 .Project {
-	background-color: black;
-	color: white;
-	height: 50px;
-	width: 400px;
-	padding-left: 40px;
-	display: flex;
-	flex-direction: center;
-	font-weight: bolder;
+    background-color: black;
+    color: white;
+    height: auto;
+    padding: 10px;
 }
 
 .Week {
-	background-color: white;
-	height: 500px;
-	padding-left: 40px;
-	display: flex;
-	flex-direction: column;
-	
+    background-color: white;
+    height: auto;
+    padding: 10px;
 }
 
-.main-container{
-	display: flex;
-	justify-content: space-around;
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.containerLeft, .containerRight {
+    flex: 1;
+    min-width: 300px; /* Minimum width for responsiveness */
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerLeft, .containerRight {
+        width: 100%; /* Full width on smaller screens */
+    }
 }
